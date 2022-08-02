@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="container">
+         <h1>Profile an offender<h1>
+    </div>
+    <br/> <br/>
+
+     <form action="/display" method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">ID Number</label>
+                <input type="text" class="form-control"  placeholder="ID Number" name = "ID_number">
+
+              </div>
+
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+
+{% endblock content %}
+}

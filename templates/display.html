@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="container">
+          <h1>Offender's Profile <h1>
+             <p> ID number: {{ offender.ID_number }}</p>
+              <p> First Name: {{ offender.first_name }}</p>
+              <p> Last Name: {{ offender.last_name }}</p>
+              <p> Phone: {{ offender.phone }}</p>
+              <p> Email: {{ offender.email }}</p>
+              <p> Plate Number: {{ offender.plate_number }}</p>
+              <p> Offense date: {{ offender.offense_date }}</p>
+              <p> Gender: {{ offender.gender }}</p>
+              <p> Offense: {{ offender.offense }}</p>
+              <p> Number booked: {{ number_booked }}</p>
+                <br/>
+               <h1>Other details <h1>
+
+
+    </div>
+
+
+
+
+{% endblock content %}
