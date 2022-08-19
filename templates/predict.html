@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="container">
+         <h1>Predict an offender<h1>
+    </div>
+    <br/> <br/>
+
+     <form action="/show_prediction" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control"  placeholder="Gender(male = 1, Female = 0)" name = "driver_gender">
+                  <input type="text" class="form-control"  placeholder="Driver Age" name = "driver_age">
+                  <input type="text" class="form-control"  placeholder="Car searched(yes =1, No=0)" name = "search_conducted">
+                  <input type="text" class="form-control"  placeholder="Stop for drug(yes =1, No=0)" name = "drugs_related_stop">
+                  <input type="text" class="form-control"  placeholder="Year stopped(eg 2022)" name = "stop_year">
+                  <input type="text" class="form-control"  placeholder="month stopped(eg 02)" name = "stop_month">
+                  <input type="text" class="form-control"  placeholder="day stopped(eg 23)" name = "stop_day">
+                  <input type="text" class="form-control"  placeholder="Equipment/Inspection Violation(yes =1, No=0)" name = "EIV">
+
+                  <input type="text" class="form-control"  placeholder="Registration Violation(yes =1, No=0)" name = "RV">
+                  <input type="text" class="form-control"  placeholder="Speeding(yes =1, No=0)" name = "SPD">
+                  <input type="text" class="form-control"  placeholder="Suspicious Person(yes =1, No=0)" name = "SP">
+                  <input type="text" class="form-control"  placeholder="Other Traffic Violation(yes =1, No=0)" name = "OTV">
+                  <input type="text" class="form-control"  placeholder="Number booked" name = "number_booked">
+
+
+              </div>
+
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+
+{% endblock content %}

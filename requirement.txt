@@ -1,0 +1,7 @@
+1. create a nexmo account with your account number and replace the client details with the newly created account
+2. modify the path to csv file in the about route to and set it's path to the realtime csv
+3. install all necessary dependeces
+4. flask run to get the gui
+
+
+thanks!

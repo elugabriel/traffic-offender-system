@@ -27,15 +27,15 @@
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
-              <a class="nav-item nav-link" href="{{ url_for('about') }}">Capture</a>
-                <a class="nav-item nav-link" href="#">Predict</a>
+              <a class="nav-item nav-link" href="{{ url_for('about') }}">Detected</a>
+                <a class="nav-item nav-link" href="{{ url_for('predict') }}">Predict</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               <a class="nav-item nav-link" href="{{ url_for('register') }}">Book</a>
-              <a class="nav-item nav-link" href="#">Report</a>
+              <a class="nav-item nav-link" href="{{ url_for('report') }}">Report</a>
                 <a class="nav-item nav-link" href="{{ url_for('profile') }}">Profile</a>
-                <a class="nav-item nav-link" href="#">Mail</a>
+                <a class="nav-item nav-link" href="{{ url_for('mail') }}">SMS</a>
             </div>
           </div>
         </div>

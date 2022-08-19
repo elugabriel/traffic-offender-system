@@ -1,20 +1,61 @@
 {% extends "layout.html" %}
 {% block content %}
 
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
     <div class="container">
-          <h1>Offender's Profile <h1>
-             <p> ID number: {{ offender.ID_number }}</p>
-              <p> First Name: {{ offender.first_name }}</p>
-              <p> Last Name: {{ offender.last_name }}</p>
-              <p> Phone: {{ offender.phone }}</p>
-              <p> Email: {{ offender.email }}</p>
-              <p> Plate Number: {{ offender.plate_number }}</p>
-              <p> Offense date: {{ offender.offense_date }}</p>
-              <p> Gender: {{ offender.gender }}</p>
-              <p> Offense: {{ offender.offense }}</p>
-              <p> Number booked: {{ number_booked }}</p>
-                <br/>
-               <h1>Other details <h1>
+        <h1>Offender's Information <h1>
+            <table style="width:100%">
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                         <th>Email</th>
+                          <th>Gender</th>
+                          <th>Plate No</th>
+                          <th>Booked</th>
+                          <th>Offense</th>
+                      </tr>
+                      <tr>
+                        <td>{{ offender.ID_number }}</td>
+                        <td>{{ other_details.first_name }} {{ other_details.last_name }}</td>
+                        <td>{{ other_details.phone }}</td>
+                          <td>{{ other_details.email }}</td>
+                          <td>{{ other_details.gender }}</td>
+                        <td>{{ offender.plate_number }}</td>
+                        <td>{{ number_booked }}</td>
+                          <td>{{ offender.offense }}</td>
+                        </tr>
+
+                    </table>
+
+            <br>
+             <h1>Other Information <h1>
+            <table style="width:100%">
+                      <tr>
+                        <th>Address</th>
+                        <th>Occupation</th>
+                        <th>Next of Kin</th>
+                         <th>Kin Address</th>
+                          <th>Kin Relationship</th>
+                          <th>Kin Number</th>
+
+                      </tr>
+                      <tr>
+                        <td>{{ other_details.address }}</td>
+                        <td>{{ other_details.occupation }}</td>
+                        <td>{{ other_details.nok_fname }}  {{ other_details.nok_lname }}</td>
+                          <td>{{ other_details.nok_address }}</td>
+                          <td>{{ other_details.nok_relationship }}</td>
+                        <td>{{ other_details.nok_phone }}</td>
+
+                        </tr>
+
+                    </table>
 
 
     </div>
